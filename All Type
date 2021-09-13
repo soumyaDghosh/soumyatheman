@@ -1,0 +1,84 @@
+//All Type , Function with argument and return type
+#include<stdio.h>
+void main()
+{
+	int i,j,k;
+	float ca;
+	int rect_area(int,int);//Type 1 function declaration
+	void rect_peri(int,int);//Type 2 function declaration
+	float circle_area(void);//Type 3 function declaration
+	void square_area(void);//Type 4 function declaration
+
+	printf("Enter  length and breadth:");
+	scanf("%d%d",&i,&j);
+
+	k=rect_area(i,j);//type 1
+	printf("\nRectangle area:%d",k);
+
+	rect_peri(i,j); //type 2
+
+	ca=circle_area();/
+#include<stdio.h>
+void main()
+{
+	int i,j,k;
+	float ca;
+	int rect_area(int,int);//Type 1 function declaration
+	void rect_peri(int,int);//Type 2 function declaration
+	float circle_area(void);//Type 3 function declaration
+	void square_area(void);//Type 4 function declaration
+	printf("Enter  length and breadth:");
+	scanf("%d%d",&i,&j);
+	k=rect_area(i,j);//type 1
+	printf("\nRectangle area:%d",k);
+	rect_peri(i,j); //type 2
+	ca=circle_area();//type 3
+	printf("\nCircle area is:%f",ca);
+	square_area()
+#include<stdio.h>
+void main()
+{
+	int i,j,k;
+	float ca;
+	int rect_area(int,int);
+	void rect_peri(int,int);
+	float circle_area(void);
+	void square_area(void);
+	printf("Enter  length and breadth:");
+	scanf("%d%d",&i,&j);
+	k=rect_area(i,j);//type 1
+	printf("\nRectangle area:%d",k);
+	rect_peri(i,j); //type 2
+	ca=circle_area();//type 3
+	printf("\nCircle area is:%f",ca);
+	square_area();//type 4
+}
+int rect_area(int a, int b)
+{
+	int c;
+	c=a*b;
+	return c;
+}
+void rect_peri(int d,int e)
+{
+	int f;
+	f=2*(d+e);
+	printf("\nRectangle perimeter is:%d",f);
+}
+
+float circle_area()
+{
+	float a, r;
+	printf("\nEnter circle radius:");
+	scanf("%f",&r);
+	a=(22*r*r)/7;
+	return a;
+}
+void square_area()
+{
+	int s,sa;
+	printf("\nEnter side of square:");
+	scanf("%d",&s);
+	sa=s*s;
+	printf("\nArea of the square is:%d",sa);
+}
